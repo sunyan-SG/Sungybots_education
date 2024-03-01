@@ -33,7 +33,7 @@ def get_file_text(uploaded_files):
                 row_text = ""  # Collect text for each row
                 for cell in row:
                     if cell.value is not None:
-                        row_text += str(cell.value) + " "  # Adjust concatenation as needed
+                        row_text += str(cell.value) + "\n"  # Adjust concatenation as needed
                 text += row_text + "\n"  # Add row to overall text
         else:
             print(f'Unsupported file type: {file.name}')
@@ -70,6 +70,7 @@ if st.button("Process"):
     # with st.spinner("Processing"):
     # get pdf text
     raw_text = get_file_text(st.session_state.pdf_docs)
+    st.write(raw_text)
     # get the text chunks
     text_chunks = get_text_chunks(raw_text)
     # create vector store
