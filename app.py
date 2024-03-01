@@ -41,7 +41,7 @@ st.set_page_config(page_title="AI Chatbot for custo",
                    page_icon=":books::parrot:")
 
 #st.title("AI Chatbot for Customer Services")
-st.title("EMBA招生查询")
+st.title("新国大EMBA招生查询")
 
 # Create a container to display the chatbot's responses
 stream_handler = StreamHandler(st.empty())
@@ -60,7 +60,7 @@ st.sidebar.markdown(
     ### Message from SungyBots:
     Very welcome to try the chatbot developed by SungyBots 👏👏!!
     
-    欢迎咨询我们的EMBA项目 👏👏！
+    欢迎咨询新国大的EMBA项目 👏👏！
     
     Any further queries, feel free contact us: contact@SungyBots.com
     """
