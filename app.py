@@ -99,7 +99,7 @@ if st.session_state.vectorDB is not None:
             search_kwargs={"k": 3})
 
         llm = ChatOpenAI(
-            model_name="gpt-4-turbo",
+            model_name="gpt-3.5-turbo",
             # model_name="text-davinci-003",
             openai_api_key=st.session_state.openai_key,
             temperature=0,
